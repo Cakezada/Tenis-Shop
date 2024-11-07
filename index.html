@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site Tesla</title>
+</head>
+<body>
+    <div class="header" id="header">
+        <nav>
+            <img src="./Group 1.png" alt="" class="logo">
+            <ul>
+                <li><a href="#" id="modelN">Nike</a></li>
+                <li><a href="#" id="modelA">Adidas</a></li>
+                <li><a href="#" id="modelNB">New Balance</a></li>
+                <li><a href="#" id="modelP">Puma</a></li>
+            </ul>
+            <a href="#" class="btn">Reserve Now</a>
+        </nav>
+        <div class="info">
+            <div>
+                <h2 id="price">R$200,00 a R$17.990,00</h2>
+                <p> Price</p>
+            </div>
+            <div>
+                <h2 id="style">Casual</h2>
+                <p> Style</p>
+            </div>
+            <div>
+                <h2 id="avaliation">4,7</h2>
+                <p> Avaliation</p>
+            </div>
+            <div class ="line">
+            </div>
+            <div>
+                <h2 id="model">SB Dunk</h2>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let header = document.getElementById('header')
+    let mk = document.getElementById('modelN')
+    let ma = document.getElementById('modelA')
+    let mnb = document.getElementById('modelNB')
+    let mp = document.getElementById('modelP')
+    let model = document.getElementById('model')
+    let price = document.getElementById('price')
+    let style = document.getElementById('style')
+    let avaliation = document.getElementById('avaliation')
+
+    mk.onclick = function() {
+        header.style.backgroundImage = "url(./97e387c5-615c-4e5a-b143-302aa9565892_1-capa.jpg)"
+        model.innerHTML = "Nike"
+        price.innerHTML = "R$200,00 a R$17.990,00"
+        style.innerHTML = "Casual"
+        avaliation.innerHTML = "4,7"
+    }
+
+    ma.onclick = function() {
+        header.style.backgroundImage = "url(./SuperStarSST_23_BR1.jpgs)"
+        model.innerHTML = "Model 3"
+        price.innerHTML = "3.1 s"
+        style.innerHTML = "180 mph"
+        avaliation.innerHTML = "402 mi"
+    }
+    mnb.onclick = function() {
+        header.style.backgroundImage = "url(./image-3.png)"
+        model.innerHTML = "Model X"
+        seg.innerHTML = "3.1 s"
+        mph.innerHTML = "180 mph"
+        mi.innerHTML = "402 mi"
+    }
+    mp.onclick = function() {
+        header.style.backgroundImage = "url(./image-4.png)"
+        model.innerHTML = "Model Y"
+        seg.innerHTML = "3.1 s"
+        mph.innerHTML = "180 mph"
+        mi.innerHTML = "402 mi"
+    }
+</script>
+</html>
